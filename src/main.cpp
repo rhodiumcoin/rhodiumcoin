@@ -2579,7 +2579,7 @@ bool LoadBlockIndex(bool fAllowNew)
             return false;
 
         // Genesis block
-        const char* pszTimestamp = "INTERNET, AS FUCK!";
+        const char* pszTimestamp = "Element 45";
         CTransaction txNew;
         txNew.nTime = nChainStartTime;
         txNew.vin.resize(1);
@@ -2592,7 +2592,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1400565159; ////1398106221;
+        block.nTime    = 1400663936; ////1398106221;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
         block.nNonce   = 0;
 
@@ -2603,7 +2603,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nTime = %u \n", block.nTime);
         printf("block.nNonce = %u \n", block.nNonce);
 
-        assert(block.hashMerkleRoot == uint256("0x"));
+        assert(block.hashMerkleRoot == uint256("0x201c6034d0b3a3c7f5fc46cedd64cd567d626c2cb44ad85af1f845684bf08f4b"));
 		assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
 
         // Start new block file

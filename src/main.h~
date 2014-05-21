@@ -48,7 +48,7 @@ static const int fHaveUPnP = true;
 static const int fHaveUPnP = false;
 #endif
 
-static const uint256 hashGenesisBlockOfficial("0xafdaf19bc0a89198f3156e31a3010522b253d4bd8ed1b61ef00b66fc2d90000d");
+static const uint256 hashGenesisBlockOfficial("0xd8b14e26586d01ac663cb0a0388b0395fd1a01d9b747e3855878301cc88bc7b8");
 static const uint256 hashGenesisBlockTestNet ("0xafdaf19bc0a89198f3156e31a3010522b253d4bd8ed1b61ef00b66fc2d90000d");
 
 static const int64 nMaxClockDrift = 2 * 60 * 60;        // two hours
@@ -588,7 +588,7 @@ public:
     {
         // Large (in bytes) low-priority (new, small-coin) transactions
         // need a fee.
-        return dPriority > COIN * 1440 / 250;
+        return dPriority > COIN * 4320 / 250;
     }
 
     int64 GetMinFee(unsigned int nBlockSize=1, bool fAllowFree=false, enum GetMinFee_mode mode=GMF_BLOCK) const;
