@@ -645,7 +645,7 @@ bool AppInit2()
     }
 
     BOOST_FOREACH(string strDest, mapMultiArgs["-seednode"])
-        AddOneShot("yellow-coin.com");//AddOneShot(strDest);
+        AddOneShot("rhodium-coin.com");//AddOneShot(strDest);
 
     // TODO: replace this by DNSseed
     // AddOneShot(string(""));
