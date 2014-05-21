@@ -2594,7 +2594,23 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nVersion = 1;
         block.nTime    = 1400663936; ////1398106221;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 0;
+        block.nNonce   = 700370;
+
+ 	   //if (true  && (block.GetHash() != hashGenesisBlock)) {
+	 
+		// This will figure out a valid hash and Nonce if you're
+		// creating a different genesis block:
+		//    uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
+		  //  while (block.GetHash() > hashTarget)
+		    //   {
+		      //     ++block.nNonce;
+		        //   if (block.nNonce == 0)
+		          // {
+		            //   printf("NONCE WRAPPED, incrementing time");
+		              // ++block.nTime;
+		      //     }
+		   //    }
+//        }
 
         //// debug print
         block.print();
