@@ -1,9 +1,0 @@
-rpcuser=anonuser
-rpcpassword=anonpassword
-rpcallowip=127.0.0.1
-rpcport=25555
-port=25550
-addnode=107.170.208.89
-daemon=1
-server=1
-listen=1
